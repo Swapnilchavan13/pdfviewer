@@ -5,6 +5,8 @@ import QRCode from 'qrcode.react';
 function App() {
 
   const link = 'http://62.72.59.146:3006/Seahorse_Press_Release_16_April_2024.pdf';
+  const link2 = 'http://62.72.59.146:3006/A4_Ad_AWC.pdf';
+
   return (
     <div className="App">
       <h1>PDF Viewer</h1>
@@ -14,6 +16,9 @@ function App() {
 
     <h1>QR Code</h1>
       <QRCode size={400} value={link} />
+      
+    <h1>QR Code 2</h1>
+      <QRCode size={400} value={link2} />
     </div>
   );
 }
